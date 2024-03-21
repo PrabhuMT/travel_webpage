@@ -1,0 +1,49 @@
+#carouselExampleCaptions {
+    width: 100%;
+    margin: 5px;
+}
+
+.carousel-control-prev-icon {
+    background-color: rgba(128,128,128,0.5);
+}
+
+.carousel-control-next-icon {
+    background-color: rgba(128,128,128,0.5);
+}
+
+.carousel-indicators {
+    background-color: rgba(128,128,128,0.2);
+    width: 100%;
+    margin: 0%;
+}
+
+.carousel-caption {
+    color: black;
+}
+
+#welcome {
+    background-image: url(bg_img.jpeg);
+    padding: 5%;
+    background-size: cover;
+
+}
+
+#footer {
+    padding: 5px;
+}
+
+.card-title {
+    text-align: left;
+}
+
+.card-text {
+    text-align: left;
+}
+
+.card {
+    margin: 5px;
+}
+
+.btn {
+    margin: 3px;
+}
