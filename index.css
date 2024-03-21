@@ -38,6 +38,8 @@
 
 .card-text {
     text-align: left;
+    height: 100px;
+    overflow-y: scroll;
 }
 
 .card {
