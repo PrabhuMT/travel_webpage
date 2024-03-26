@@ -25,7 +25,10 @@
     background-image: url(bg_img.jpeg);
     padding: 5%;
     background-size: cover;
+}
 
+#welcome-inner {
+    width: 50%;
 }
 
 #footer {
