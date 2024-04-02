@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Dropdown Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .dropdown-menu {
+      display: none;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out; /* Adjust the timing here */
+    }
+    .show-dropdown .dropdown-menu {
+      display: block;
+      max-height: 500px; /* Adjust this value according to your needs */
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and jQuery (optional) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var dropdown = document.querySelector('.dropdown');
+
+      dropdown.addEventListener('click', function(event) {
+        dropdown.classList.toggle('show-dropdown');
+      });
+    });
+  </script>
+</body>
+</html>

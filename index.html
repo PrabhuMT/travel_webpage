@@ -53,7 +53,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Places <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  Places <i id="dropdown-caret" class="fa fa-caret-down" aria-hidden="true"></i>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Kerala</a></li>
@@ -310,7 +310,11 @@
         $('.caret-toggle').on('click', function() {
           $(this).find('i').toggleClass('fa-caret-up');
         });
+
+        $('.dropdown-item').on('click', function() {
+          $('#dropdown-caret').removeClass('fa-caret-up');
+        });
       });
-  </script>
+    </script>
   </body>
 </html>
